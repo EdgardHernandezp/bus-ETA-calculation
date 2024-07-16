@@ -96,6 +96,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<testFramework>JUNIT5</testFramework>
+					<baseClassForTests>com.dreamseeker.bus.integrations.ContractBase</baseClassForTests>
 				</configuration>
 			</plugin>
 			<plugin>
