@@ -9,7 +9,7 @@ Contract.make {
         triggeredBy 'triggerLocationSending()'
     }
     outputMessage {
-        sentTo 'bus-location-queue'
+        sentTo(value(consumer('bus-location-exchange'), producer('bus-location-queue')))
         body(
                 [
                         'busNumber'  : alphaNumeric(),
