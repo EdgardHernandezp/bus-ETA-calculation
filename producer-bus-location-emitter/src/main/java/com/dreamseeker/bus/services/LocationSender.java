@@ -10,7 +10,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import static org.springframework.amqp.support.AmqpHeaders.CONTENT_TYPE;
+import static org.springframework.messaging.MessageHeaders.CONTENT_TYPE;
+
 
 @Service
 @Slf4j
